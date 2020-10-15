@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js add @types/Joi -D
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add class-transform
 
 PATH: 
   /home/matheus/anaconda3/bin:/home/matheus/anaconda3/condabin:/home/matheus/.zinit/polaris/sbin:/home/matheus/.zinit/polaris/bin:/home/matheus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/matheus/Android/Sdk/emulator:/home/matheus/Android/Sdk/tools:/home/matheus/Android/Sdk/tools/bin:/home/matheus/Android/Sdk/platform-tools:/home/matheus/android-studio/bin:/home/matheus/Android/Sdk/emulator:/home/matheus/Android/Sdk/tools:/home/matheus/Android/Sdk/tools/bin:/home/matheus/Android/Sdk/platform-tools:/home/matheus/android-studio/bin
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2fJoi: Not found
+  Error: https://registry.yarnpkg.com/class-transform: Not found
       at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66988:18)
       at Request.self.callback (/usr/share/yarn/lib/cli.js:140749:22)
       at Request.emit (events.js:315:20)
@@ -45,6 +45,7 @@ npm manifest:
       "celebrate": "^13.0.3",
       "cors": "^2.8.5",
       "date-fns": "^2.15.0",
+      "dotenv": "^8.2.0",
       "express": "^4.17.1",
       "express-async-errors": "^3.1.1",
       "handlebars": "^4.7.6",
@@ -62,6 +63,7 @@ npm manifest:
       "@types/bcryptjs": "^2.4.2",
       "@types/cors": "^2.8.7",
       "@types/express": "^4.17.7",
+      "@types/hapi__joi": "^17.1.6",
       "@types/jest": "^26.0.14",
       "@types/jsonwebtoken": "^8.5.0",
       "@types/mongodb": "^3.5.27",
@@ -702,6 +704,11 @@ Lockfile:
     integrity sha512-AiHRaEB50LQg0pZmm659vNBb9f4SJ0qrAnteuzhSeAUcJKxoYgEnprg/83kppCnc2zvtCKbdZry1a5pVY3lOTQ==
     dependencies:
       "@types/node" "*"
+  
+  "@types/hapi__joi@^17.1.6":
+    version "17.1.6"
+    resolved "https://registry.yarnpkg.com/@types/hapi__joi/-/hapi__joi-17.1.6.tgz#b84663676aa9753c17183718338dd40ddcbd3754"
+    integrity sha512-y3A1MzNC0FmzD5+ys59RziE1WqKrL13nxtJgrSzjoO7boue5B7zZD2nZLPwrSuUviFjpKFQtgHYSvhDGfIE4jA==
   
   "@types/istanbul-lib-coverage@*", "@types/istanbul-lib-coverage@^2.0.0", "@types/istanbul-lib-coverage@^2.0.1":
     version "2.0.3"
